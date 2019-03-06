@@ -32,8 +32,11 @@ final class RespondSerializer extends Respond
      */
     public $type;
 
+    /**
+     * @param mixed $data
+     */
     public function __construct(
-        string $data,
+        $data,
         string $format,
         ?SerializationContext $context = null,
         ?string $type = null
