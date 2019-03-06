@@ -26,6 +26,9 @@ final class RespondSerializer extends Respond
      */
     public $context;
 
+    /**
+     * @param mixed $data
+     */
     public function __construct($data, string $format, array $context = [])
     {
         $this->data = $data;
