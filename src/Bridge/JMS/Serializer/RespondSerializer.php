@@ -28,7 +28,7 @@ final class RespondSerializer extends Respond
     public $context;
 
     /**
-     * @var string
+     * @var string|null
      */
     public $type;
 
