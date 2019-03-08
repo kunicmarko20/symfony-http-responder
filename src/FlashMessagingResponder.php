@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace ro0NL\HttpResponder;
 
+use ro0NL\HttpResponder\Respond\Respond;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>
  */
-final class FlashResponderDecorator implements Responder
+final class FlashMessagingResponder implements Responder
 {
     /**
      * @var Responder

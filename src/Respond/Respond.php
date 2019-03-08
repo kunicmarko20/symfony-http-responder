@@ -62,4 +62,14 @@ abstract class Respond
 
         return $this;
     }
+
+    /**
+     * @param mixed $message
+     */
+    public function withFlash(string $type, $message): self
+    {
+        $this->flashes[$type][] = $message;
+
+        return $this;
+    }
 }
